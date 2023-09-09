@@ -1,0 +1,12 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: github.com/shwatanap/connect-tic-tac-toe/src/api
+plugins:
+  - plugin: go
+    out: ../src/api
+    opt: paths=source_relative
+  - plugin: connect-go
+    out: ../src/api
+    opt: paths=source_relative
