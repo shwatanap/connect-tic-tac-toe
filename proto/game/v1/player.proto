@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package game.v1;
+
+import "game/v1/symbol.proto";
+
+message Player {
+	int32 id = 1;
+	Symbol symbol = 2;
+}

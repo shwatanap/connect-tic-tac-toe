@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package game.v1;
+
+enum Symbol {
+	UNKNOWN = 0;
+	EMPTY = 1;
+	CIRCLE = 2;
+	CROSS = 3;
+	NONE = 4;
+}
