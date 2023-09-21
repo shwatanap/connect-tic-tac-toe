@@ -6,9 +6,9 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	gamev1connect "github.com/shwatanap/connect-tic-tac-toe/src/api/game/v1/gamev1connect"
-	matchingv1connect "github.com/shwatanap/connect-tic-tac-toe/src/api/matching/v1/matchingv1connect"
-	handler "github.com/shwatanap/connect-tic-tac-toe/src/handler/server"
+	gamev1connect "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/game/v1/gamev1connect"
+	matchingv1connect "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/matching/v1/matchingv1connect"
+	handler "github.com/shwatanap/connect-tic-tac-toe/src/connect/handler/server"
 )
 
 func main() {

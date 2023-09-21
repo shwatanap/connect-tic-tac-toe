@@ -3,8 +3,8 @@ package adapter
 import (
 	"fmt"
 
-	gamev1 "github.com/shwatanap/connect-tic-tac-toe/src/api/game/v1"
-	mactingv1 "github.com/shwatanap/connect-tic-tac-toe/src/api/matching/v1"
+	gamev1 "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/game/v1"
+	mactingv1 "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/matching/v1"
 	"github.com/shwatanap/connect-tic-tac-toe/src/model"
 )
 
