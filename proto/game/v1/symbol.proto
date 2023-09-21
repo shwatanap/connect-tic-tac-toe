@@ -3,9 +3,9 @@ syntax = "proto3";
 package game.v1;
 
 enum Symbol {
-	UNKNOWN = 0;
-	EMPTY = 1;
-	CIRCLE = 2;
-	CROSS = 3;
-	NONE = 4;
+	SYMBOL_UNKNOWN_UNSPECIFIED = 0;
+	SYMBOL_EMPTY = 1;
+	SYMBOL_CIRCLE = 2;
+	SYMBOL_CROSS = 3;
+	SYMBOL_NONE = 4;
 }

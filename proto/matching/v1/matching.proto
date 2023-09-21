@@ -12,9 +12,9 @@ message JoinRoomRequest {}
 
 message JoinRoomResponse {
 	enum Status {
-		UNKNOWN = 0;
-		WAITTING = 1;
-		MATCHED = 2;
+		STATUS_UNKNOWN_UNSPECIFIED = 0;
+		STATUS_WAITTING = 1;
+		STATUS_MATCHED = 2;
 	}
 
 	Room room = 1;
