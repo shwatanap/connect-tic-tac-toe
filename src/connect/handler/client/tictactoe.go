@@ -92,13 +92,13 @@ func Matching(ctx context.Context, client matchingv1connect.MatchingServiceClien
 			return stream.Err()
 		}
 
-		if stream.Msg().GetStatus() == matchingv1.JoinRoomResponse_MATCHED {
+		if stream.Msg().GetStatus() == matchingv1.JoinRoomResponse_STATUS_MATCHED {
 			// マッチング成立
 			t.Room = adapter.Room(stream.Msg().GetRoom())
 			t.Me = adapter.Player(stream.Msg().GetMe())
 			fmt.Printf("Matched room_id=%d\n", stream.Msg().GetRoom().GetId())
 			return nil
-		} else if stream.Msg().GetStatus() == matchingv1.JoinRoomResponse_WAITTING {
+		} else if stream.Msg().GetStatus() == matchingv1.JoinRoomResponse_STATUS_WAITTING {
 			// 待機中
 			fmt.Println("Waiting mathing...")
 		}

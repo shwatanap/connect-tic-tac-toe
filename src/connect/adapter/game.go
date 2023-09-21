@@ -25,13 +25,13 @@ func Player(p *gamev1.Player) *model.Player {
 
 func Symbol(c gamev1.Symbol) model.Symbol {
 	switch c {
-	case gamev1.Symbol_EMPTY:
+	case gamev1.Symbol_SYMBOL_EMPTY:
 		return model.Empty
-	case gamev1.Symbol_CIRCLE:
+	case gamev1.Symbol_SYMBOL_CIRCLE:
 		return model.Circle
-	case gamev1.Symbol_CROSS:
+	case gamev1.Symbol_SYMBOL_CROSS:
 		return model.Cross
-	case gamev1.Symbol_NONE:
+	case gamev1.Symbol_SYMBOL_NONE:
 		return model.None
 	}
 

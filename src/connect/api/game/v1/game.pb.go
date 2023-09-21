@@ -597,7 +597,7 @@ func (x *PlayResponse_FinishedEvent) GetWinner() Symbol {
 	if x != nil {
 		return x.Winner
 	}
-	return Symbol_UNKNOWN
+	return Symbol_SYMBOL_UNKNOWN_UNSPECIFIED
 }
 
 func (x *PlayResponse_FinishedEvent) GetBoard() *Board {

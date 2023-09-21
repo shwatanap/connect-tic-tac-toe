@@ -44,7 +44,7 @@ func (h *MatchingHandler) JoinRoom(c context.Context, req *connect.Request[match
 			me.Symbol = model.Cross
 			room.Guest = me
 			stream.Send(&matchingv1.JoinRoomResponse{
-				Status: matchingv1.JoinRoomResponse_MATCHED,
+				Status: matchingv1.JoinRoomResponse_STATUS_MATCHED,
 				Room:   adapter.PBRoom(room),
 				Me:     adapter.PBPlayer(room.Guest),
 			})
@@ -64,7 +64,7 @@ func (h *MatchingHandler) JoinRoom(c context.Context, req *connect.Request[match
 	h.Unlock()
 
 	stream.Send(&matchingv1.JoinRoomResponse{
-		Status: matchingv1.JoinRoomResponse_WAITTING,
+		Status: matchingv1.JoinRoomResponse_STATUS_WAITTING,
 		Room:   adapter.PBRoom(room),
 	})
 
@@ -77,7 +77,7 @@ func (h *MatchingHandler) JoinRoom(c context.Context, req *connect.Request[match
 
 			if guest != nil {
 				stream.Send(&matchingv1.JoinRoomResponse{
-					Status: matchingv1.JoinRoomResponse_MATCHED,
+					Status: matchingv1.JoinRoomResponse_STATUS_MATCHED,
 					Room:   adapter.PBRoom(room),
 					Me:     adapter.PBPlayer(room.Host),
 				})

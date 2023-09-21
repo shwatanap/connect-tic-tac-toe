@@ -27,14 +27,14 @@ func PBPlayer(p *model.Player) *gamev1.Player {
 func PBSymbol(c model.Symbol) gamev1.Symbol {
 	switch c {
 	case model.Circle:
-		return gamev1.Symbol_CIRCLE
+		return gamev1.Symbol_SYMBOL_CIRCLE
 	case model.Cross:
-		return gamev1.Symbol_CROSS
+		return gamev1.Symbol_SYMBOL_CROSS
 	case model.Empty:
-		return gamev1.Symbol_EMPTY
+		return gamev1.Symbol_SYMBOL_EMPTY
 	}
 
-	return gamev1.Symbol_UNKNOWN
+	return gamev1.Symbol_SYMBOL_UNKNOWN_UNSPECIFIED
 }
 
 func PBBoard(b *model.Board) *gamev1.Board {

@@ -72,7 +72,7 @@ func (x *Player) GetSymbol() Symbol {
 	if x != nil {
 		return x.Symbol
 	}
-	return Symbol_UNKNOWN
+	return Symbol_SYMBOL_UNKNOWN_UNSPECIFIED
 }
 
 var File_game_v1_player_proto protoreflect.FileDescriptor
