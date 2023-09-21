@@ -9,8 +9,8 @@ import (
 
 	"github.com/bufbuild/connect-go"
 
-	"github.com/shwatanap/connect-tic-tac-toe/src/adapter"
-	matchingv1 "github.com/shwatanap/connect-tic-tac-toe/src/api/matching/v1"
+	"github.com/shwatanap/connect-tic-tac-toe/src/connect/adapter"
+	matchingv1 "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/matching/v1"
 	"github.com/shwatanap/connect-tic-tac-toe/src/model"
 )
 

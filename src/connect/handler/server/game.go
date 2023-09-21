@@ -7,8 +7,8 @@ import (
 
 	"github.com/bufbuild/connect-go"
 
-	"github.com/shwatanap/connect-tic-tac-toe/src/adapter"
-	gamev1 "github.com/shwatanap/connect-tic-tac-toe/src/api/game/v1"
+	"github.com/shwatanap/connect-tic-tac-toe/src/connect/adapter"
+	gamev1 "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/game/v1"
 	"github.com/shwatanap/connect-tic-tac-toe/src/model"
 )
 

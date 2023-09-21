@@ -17,11 +17,11 @@ import (
 	"github.com/bufbuild/connect-go"
 	"golang.org/x/net/http2"
 
-	"github.com/shwatanap/connect-tic-tac-toe/src/adapter"
-	gamev1 "github.com/shwatanap/connect-tic-tac-toe/src/api/game/v1"
-	gamev1connect "github.com/shwatanap/connect-tic-tac-toe/src/api/game/v1/gamev1connect"
-	matchingv1 "github.com/shwatanap/connect-tic-tac-toe/src/api/matching/v1"
-	matchingv1connect "github.com/shwatanap/connect-tic-tac-toe/src/api/matching/v1/matchingv1connect"
+	"github.com/shwatanap/connect-tic-tac-toe/src/connect/adapter"
+	gamev1 "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/game/v1"
+	gamev1connect "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/game/v1/gamev1connect"
+	matchingv1 "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/matching/v1"
+	matchingv1connect "github.com/shwatanap/connect-tic-tac-toe/src/connect/api/matching/v1/matchingv1connect"
 	"github.com/shwatanap/connect-tic-tac-toe/src/model"
 )
 

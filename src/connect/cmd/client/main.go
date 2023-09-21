@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	handler "github.com/shwatanap/connect-tic-tac-toe/src/handler/client"
+	handler "github.com/shwatanap/connect-tic-tac-toe/src/connect/handler/client"
 )
 
 func main() {
